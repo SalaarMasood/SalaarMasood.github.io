@@ -1,0 +1,125 @@
+body
+{
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+}
+a.navbar-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+#navbar-div{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+    /* border: 10px solid black; */
+    /* margin: 100px; */
+}
+
+#backdrop{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+    padding: 0px 10%;
+}
+
+#backdrop>div{
+    /* width: 40%; */
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin-top: 5%;
+}
+
+#backdrop-left-column
+{
+    width:50%;
+}
+
+#backdrop-left-column>h1{
+    font-size: 44px;
+    font-weight: 700;
+    color: #21243D;
+}
+
+#backdrop-left-column>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #21243D;
+}
+
+#backdrop-left-button{
+    background-color: #ff6464;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Backdrop left column styles end */
+
+#backdrop-right-column
+{
+    height: 150px;
+    width: 40%;
+    text-align: center;
+}
+
+#recent-blog-posts-section{
+    background-color: #edf7fa;
+    padding: 3% 11%;
+}
+
+/* Backdrop styles end */
+
+#recent-posts-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#recent-posts-header>h4{
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D
+}
+
+div.card{
+    color: #21243D;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 22px;
+}
+
+div.card>h2{
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.card>span{
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+div.card>p{
+    font-size: 16px;
+}
+
+#card-container{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    padding: 5% 10%;
+}
+
+section.featured-works{
+    background-color: white;
+    padding: 1.5% 19%;
+}
+
