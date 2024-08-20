@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f7f3e9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #4a3b3b;
+        }
+        
+        section {
+            width: 80%;
+            max-width: 800px;
+            background: #fffbe6;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            border: 1px solid #d1b280;
+        }
+        
+        h1, h2 {
+            font-family: 'Merriweather', serif;
+            color: #8b5e3c;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #5a4035;
+        }
+        
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #d1b280;
+            border-radius: 5px;
+            background-color: #faf3e0;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #8b5e3c;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Merriweather', serif;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #7a5232;
+            transform: scale(1.05);
+        }
+        
+        #main {
+            margin-top: 20px;
+        }
+        
+        .book-item {
+            border-bottom: 1px solid #d1b280;
+            padding: 10px;
+            background-color: #fef6e7;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .book-item:last-child {
+            border-bottom: none;
+        }
+        
+        .fancy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #8b5e3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Merriweather', serif;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .fancy-button:hover {
+            background-color: #7a5232;
+            transform: scale(1.05);
+        }
+        
+        #search-button, #load-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Book Catalog</h1>
+        <form id="myForm">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="title" required>
+
+            <label for="authorName">Author Name:</label>
+            <input type="text" id="authorName" name="author" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <input type="submit" value="Add Book">
+        </form>
+    </section>
+
+    <section>
+        <h2>Book List</h2>
+        <button class="fancy-button" onClick="getBooks()" id = "load-button">Load Books</button>
+        <div id="main"></div>
+        <a href="search.html" class="fancy-button" id = "search-button">Go to Search Page</a>
+    </section>
+
+    <script src="catalogue.js"></script>
+</body>
+
+</html>
